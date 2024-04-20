@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>QUTONE</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="shortcut icon" href="icons/favicon.png">
+		<link href="icons/themify-icons/themify-icons.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	</head>
+	<body onload="myFunction()">
+		<!--spinner loader-->
+		<div id="sk-circle" class="sk-circle">
+		  <div class="sk-circle1 sk-child"></div>
+		  <div class="sk-circle2 sk-child"></div>
+		  <div class="sk-circle3 sk-child"></div>
+		  <div class="sk-circle4 sk-child"></div>
+		  <div class="sk-circle5 sk-child"></div>
+		  <div class="sk-circle6 sk-child"></div>
+		  <div class="sk-circle7 sk-child"></div>
+		  <div class="sk-circle8 sk-child"></div>
+		  <div class="sk-circle9 sk-child"></div>
+		  <div class="sk-circle10 sk-child"></div>
+		  <div class="sk-circle11 sk-child"></div>
+		  <div class="sk-circle12 sk-child"></div>
+		</div>
+		<!--end spinner loader-->
+		<div id="catalog" class="container-fluid animate-bottom">
+			<div class="row">
+				<!--utility bar-->
+				<nav class="navbar navbar-fixed-left navbar-minimal animate open">
+					<div class="navbar-toggler animate">
+						<span class="menu-icon ti-plus"></span>
+					</div>
+					<ul class="navbar-menu animate">
+						<li>
+							<a id="zoomIn" class="animate">
+								<span class="ti-plus"></span>
+							</a>
+						</li>
+						<li>
+							<a id="zoomOut" class="animate">
+								<span class="ti-minus"></span>
+							</a>
+						</li>
+						<li>
+							<a data-toggle="tooltip" data-placement="right" title="Main view" class="animate activefront">
+								<span class="ti-angle-up"></span>
+							</a>
+						</li>
+						<li>
+							<a data-toggle="tooltip" data-placement="right" title="View 1" class="animate activeside">
+								<span class="ti-angle-right"></span>
+							</a>
+						</li>
+						<li>
+							<a data-toggle="tooltip" data-placement="right" title="View 2" class="animate activetop">
+								<span class="ti-angle-down"></span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<!--end utility bar-->
+				<!--left column-->
+				<!--empty view box-->
+				<div class="box-view"></div>
+				<!--front-view-->
+				<div id="desk-sx" class="front-view col-sm-12 col-md-8 tail">
+					<img id="base" src="img/img10.jpg" alt="" class="img-responsive"/>
+					<img id="shell" src="img/shell-cream.png" alt="" class="img-responsive"/>
+					<img id="pillow" src="img/pillow-grey.png"  alt="" class="img-responsive"/>
+				</div>
+				<!--side-view-->
+				<div id="desk-sx-side" class="side-view col-sm-12 col-md-8 tail">
+					<img id="base-side" src="img/base-honey-side.png" alt="" class="img-responsive"/>
+					<img id="shell-side" src="img/shell-cream-side.png" alt="" class="img-responsive"/>
+					<img id="pillow-side" src="img/pillow-grey-side.png"  alt="" class="img-responsive"/>
+				</div>
+				<!--back-view-->
+				<div id="desk-sx-back" class="back-view col-sm-12 col-md-8 tail">
+					<img id="base-back" src="img/base-honey-back.png" alt="" class="img-responsive"/>
+					<img id="shell-back" src="img/shell-cream-back.png" alt="" class="img-responsive"/>
+					<img id="pillow-back" src="img/pillow-side.png"  alt="" class="img-responsive"/>
+				</div>
+				<!--end left column-->
+				<!--right column-->
+				<div id="desk-dx" class="col-sm-12 col-md-4">
+					<div id="desk-dx-top" class="col-sm-12 catalog">
+						<div id="mySidenav-13" class="sidenav-13">
+							<div class="top-logo col-xs-12">
+								<img class="logo image-responsive" alt="" src="img/logo.png" style="width: auto; height: 40px; margin-top:25px"/>
+							</div>					
+							<div onclick="closeNav13()" class="top-nav push-active col-xs-6">
+								<span class="ti-angle-left"></span><span class="tab-space">Back</span>
+							</div>	
+							<div class="top-nav-name col-xs-12" data-toggle="collapse">
+								<span>Eames Plastic Armchair</span>
+							</div>
+							<div data-toggle="tooltip" title="Vitra Armchair" class="col-xs-6 product-tail frame">
+								<img class="image-responsive" alt="" src="img/product-1.jpg"/>
+							</div>
+							<div data-toggle="tooltip" title="Vitra Loung Chair" class="col-xs-6 product-tail frame">
+								<img class="image-responsive" alt="" src="img/product-2.jpg"/>
+							</div>
+							<div data-toggle="tooltip" title="Plastic Chair" class="col-xs-6 product-tail frame">
+								<img class="image-responsive" alt="" src="img/product-3.jpg"/>
+							</div>
+							<div data-toggle="tooltip" title="HAL Leather Wood" class="col-xs-6 product-tail frame">
+								<img class="image-responsive" alt="" src="img/product-4.jpg"/>
+							</div>
+							<div data-toggle="tooltip" title="HAL Armchair Wood" class="col-xs-6 product-tail frame">
+								<img class="image-responsive" alt="" src="img/product-5.jpg"/>
+							</div>
+							<div data-toggle="tooltip" title="Organic Conference" class="col-xs-6 product-tail frame">
+								<img class="image-responsive" alt="" src="img/product-6.jpg"/>
+							</div>
+							<div data-toggle="tooltip" title="Organic Fabric" class="col-xs-6 product-tail frame">
+								<img class="image-responsive" alt="" src="img/product-7.jpg"/>
+							</div>
+							<div data-toggle="tooltip" title="Vitra Grand Repose" class="col-xs-6 product-tail frame">
+								<img class="image-responsive" alt="" src="img/product-8.jpg"/>
+							</div>
+						</div>
+						<div id="mySidenav" class="sidenav">
+							<div class="top-logo col-xs-12">
+								<img class="logo image-responsive" alt="" src="img/logo.png" style="width: auto; height: 40px; margin-top:25px"/>
+							</div>
+							<ul class="list-group row">
+								<li onclick="openNav3()" class="list-group-item col-xs-12">
+									<span class="chat-img pull-left">
+										<img width="50" class="img-responsive" alt="" src="img/icon-2.jpg">
+									</span>
+									<span>Imarble</span>
+									<span class="tab-space"></span><span class="ti-angle-right"></span>
+								</li>
+								<li class="list-group-item col-xs-12">
+									<span class="chat-img pull-left">
+										<img width="50" class="img-responsive" alt="" src="img/icon-2.jpg">
+									</span>
+									<span>STONEWARE</span>
+									<span class="tab-space"></span><span class="ti-angle-right"></span>
+								</li>												
+								<li  class="list-group-item col-xs-12">
+									<span class="chat-img pull-left">
+										<img width="50" class="img-responsive" alt="" src="img/icon-2.jpg">
+									</span>
+									<span>GVT</span>
+								<span class="tab-space"></span><span class="ti-angle-right"></span>
+								</li>
+								<li class="list-group-item col-xs-12">
+									<span class="chat-img pull-left">
+										<img width="50" class="img-responsive" alt="" src="img/icon-2.jpg">
+									</span>
+									<span>QFLEX</span>
+								<span class="tab-space"></span><span class="ti-angle-right"></span>
+								</li>
+								<li class="list-group-item col-xs-12">
+									<span class="chat-img pull-left">
+										<img width="50" class="img-responsive" alt="" src="img/icon-2.jpg">
+									</span>
+									<span>QGRES</span>
+								<span class="tab-space"></span><span class="ti-angle-right"></span>
+								</li>
+								<li class="list-group-item col-xs-12">
+									<span class="chat-img pull-left">
+										<img width="50" class="img-responsive" alt="" src="img/icon-2.jpg">
+									</span>
+									<span>QROCKS</span>
+								<span class="tab-space"></span><span class="ti-angle-right"></span>
+								</li>
+								<li class="list-group-item col-xs-12">
+									<span class="chat-img pull-left">
+										<img width="50" class="img-responsive" alt="" src="img/icon-2.jpg">
+									</span>
+									<span>PROGETTO</span>
+								<span class="tab-space"></span><span class="ti-angle-right"></span>
+								</li>
+							</ul>
+						</div>
+						<div id="mySidenav-3" class="sidenav-3">
+							<div onclick="closeNav3()" class="top-nav push col-xs-6">
+								<span class="ti-angle-left"></span><span class="tab-space"></span>
+								<span>IMARBLE</span>
+							</div>
+							<ul class="list-group row">
+								<li onclick="document.getElementById('base').src='img/FORMA_MARFIL_2.jpg', document.getElementById('base-side').src='img/FORMA_MARFIL_3.jpg', document.getElementById('base-back').src='img/FORMA_MARFIL_1.jpg'" class="text list-group-item col-xs-12 activex select-2" id='price0-1' data-price="20" data-code="honey">
+									<span class="chat-img pull-left">
+									<img width="50" class="img-circle img-responsive" alt="" src="img/FORMA_MARFIL_2.jpg" style="height: 50px;"></span>FORMA MARFIL (SILK)
+									<span class="tab-space"></span><span class="ti-pencil"></span>
+								</li>
+								<li onclick="document.getElementById('base').src='img/marble-4.jpg', document.getElementById('base-side').src='img/marble-4_1.jpg', document.getElementById('base-back').src='img/marble-4_2.jpg'" class="text list-group-item col-xs-12 select-2" id='price0-2' data-price="60" data-code="wire">
+									<span class="chat-img pull-left">
+									<img width="50" class="img-circle img-responsive" alt="" src="img/marble-4.jpg" style="height: 50px;"></span>CORVET GRIGIO (D)
+									<span class="tab-space"></span><span class="ti-pencil"></span>
+								</li>
+								<li onclick="document.getElementById('base').src='img/marble-3.jpg', document.getElementById('base-side').src='img/marble-3_1.jpg', document.getElementById('base-back').src='img/marble-3_2.jpg'" class="text list-group-item col-xs-12 select-2" id='price0-2' data-price="60" data-code="wire">
+									<span class="chat-img pull-left">
+									<img width="50" class="img-circle img-responsive" alt="" src="img/marble-3.jpg" style="height: 50px;"></span>VERSACE BIANCO (P)
+									<span class="tab-space"></span><span class="ti-pencil"></span>
+								</li>
+								<li onclick="document.getElementById('base').src='img/marble-2.jpg', document.getElementById('base-side').src='img/marble-2_2.jpg', document.getElementById('base-back').src='img/marble-2_1.jpg'" class="text list-group-item col-xs-12 select-2" id='price0-2' data-price="60" data-code="wire">
+									<span class="chat-img pull-left">
+									<img width="50" class="img-circle img-responsive" alt="" src="img/marble-2.jpg" style="height: 50px;"></span>RASINA SILK (SILK)
+									<span class="tab-space"></span><span class="ti-pencil"></span>
+								</li>
+							</ul>
+						</div>
+					</div>					
+				</div>
+				<!--end right column-->
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/summary.js"></script>
+		<script src="js/views.js"></script>
+		<script src="js/navigation.js"></script>
+		<script src="js/utility.js"></script>
+	</body>	
+</html>
